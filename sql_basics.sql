@@ -22,3 +22,14 @@ INSERT INTO students VALUES (3, "Ram", 19);
 
 -- Displaying a table
 SELECT * FROM students;
+
+-- Display all databases
+SHOW DATABASES;
+
+-- Display tables in the selected database
+SHOW TABLES;
+
+-- Display the structure of a table
+DESCRIBE students;
+
+
