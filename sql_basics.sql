@@ -20,8 +20,17 @@ INSERT INTO students VALUES (1, "Suman", 21);
 INSERT INTO students VALUES (2, "Hari", 22);
 INSERT INTO students VALUES (3, "Ram", 19);
 
+-- Inserting multiple records
+INSERT INTO students (id, name, age)
+VALUES
+(4, 'Sita', 20),
+(5, 'Rohan', 23),
+(6, 'Gita', 18);
+
 -- Displaying a table
 SELECT * FROM students;
+
+TRUNCATE TABLE students;
 
 -- Display all databases
 SHOW DATABASES;
@@ -31,5 +40,7 @@ SHOW TABLES;
 
 -- Display the structure of a table
 DESCRIBE students;
+
+
 
 
