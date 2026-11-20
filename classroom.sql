@@ -68,6 +68,30 @@ ORDER BY marks DESC
 LIMIT 3;
 
 
+-- Aggregate Functions:
+ 
+-- COUNT():
+SELECT  COUNT(name) FROM student;
+SElECT COUNT(*) FROM student;
+SELECT COUNT(marks) FROM student;
+
+-- MAX():
+SELECT MAX(marks) FROM student;
+
+-- AVG():
+SELECT AVG(marks) FROM student;
+
+-- MIN():
+SELECT MIN(marks) FROM student;
+
+-- SUM()
+SELECT SUM(marks) FROM student;
+
+-- GROUP BY CLAUSE:
+SELECT city, COUNT(rollno) FROM student
+GROUP BY grade;
+
+
 
 
 
