@@ -91,7 +91,11 @@ SELECT SUM(marks) FROM student;
 SELECT city, COUNT(rollno) FROM student
 GROUP BY grade;
 
-
+-- HAVING CLAUSE:
+SELECT city,COUNT(name)
+FROM student
+GROUP BY city
+HAVING MAX(marks)>60;
 
 
 
