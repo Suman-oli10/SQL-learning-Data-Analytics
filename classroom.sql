@@ -97,6 +97,41 @@ FROM student
 GROUP BY city
 HAVING MAX(marks)>60;
 
+-- Table related queries:
+
+-- UPDATE
+UPDATE student
+SET grade="A"
+WHERE grade="O";
+SET SQL_SAFE_UPDATES=0;
+
+UPDATE student
+SET marks=92
+WHERE name="Suman";
+
+UPDATE student
+SET marks=marks+1;
+
+UPDATE student
+SET grade="A+"
+WHERE marks > 90;
+
+UPDATE student
+SET grade = CASE
+    WHEN marks > 80 AND marks <= 90 THEN 'A'
+    WHEN marks > 70 AND marks <= 80 THEN 'B+'
+    WHEN marks > 60 AND marks <= 70 THEN 'B'
+    WHEN marks > 50 AND marks <= 60 THEN 'C+'
+    WHEN marks >= 40 AND marks <= 50 THEN 'C'
+    ELSE NULL
+END;
+
+SELECT*FROM student;
+
+-- DELETE
+DELETE FROM student
+WHERE marks < 30;
+
 
 
 
