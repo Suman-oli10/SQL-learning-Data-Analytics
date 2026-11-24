@@ -61,6 +61,50 @@ SELECT * FROM data;
 
 
 
+-- FOREIGN KEY: 
+CREATE TABLE Department(
+id INT PRIMARY KEY,
+name VARCHAR(50)
+);
+
+CREATE TABLE teacher(
+id INT PRIMARY KEY,
+name VARCHAR(50),
+dept_id INT,
+FOREIGN KEY(dept_id) REFERENCES Department(id)
+ON DELETE CASCADE
+ON UPDATE CASCADE
+);
+
+-- To see foreign key method: Database-Reverse Engineer-choose database file-next-next
+
+-- CASCADING FOREIGN KEY(FK)
+ INSERT INTO Department 
+ VALUES
+ (101,"SQL"),
+ (102,"Physics");
+ 
+ INSERT INTO teacher 
+ VALUES
+ (1,"Ram",101),
+ (2,"Shyam",102);
+ 
+UPDATE Department
+SET id=105
+WHERE id=101;
+
+SELECT * FROM Department;
+ SELECT * FROM teacher;
+ 
+ -- Even though we didn't change id to 105 in teacher it automatically changed using cascading for foreign key.
+
+ 
+ -- For the logic clearly on the notebook.
+ 
+
+ 
+
+
 
 
 

@@ -21,3 +21,10 @@ VALUES
 SELECT city, AVG(marks) FROM school_students
 GROUP BY city
 ORDER BY marks ASC;
+
+-- General order
+SELECT name,city
+FROM school_students
+WHERE marks>60
+GROUP BY name
+ORDER BY city ASC;
