@@ -47,7 +47,7 @@ USE employee;
 CREATE TABLE data(
 name varchar(60),
 salary INT DEFAULT 25000,  -- USE of default constraint
-age int check(age>=18)   -- use of check constraint
+age int check(age>=18)  -- use of check constraint
 );
 
 
@@ -97,9 +97,29 @@ SELECT * FROM Department;
  SELECT * FROM teacher;
  
  -- Even though we didn't change id to 105 in teacher it automatically changed using cascading for foreign key.
+-- For the logic clearly on the notebook.
 
- 
- -- For the logic clearly on the notebook.
+-- ALTER command in SQL: The ALTER TABLE command in SQL is used to modify the structure of an existing table without deleting the table or its existing records.
+-- SQL:
+
+ALTER TABLE data
+ADD COLUMN id INT NOT NULL default 10;
+
+ALTER TABLE data
+DROP COLUMN id; -- For droping the column
+
+ALTER TABLE data
+RENAME to employee_data;  -- For renaming a table name
+
+ALTER TABLE employee_data
+CHANGE COLUMN id Emp_id INT NOT NULL default 1;
+
+SELECT * FROM employee_data;
+
+-- Another important sql command: 
+-- TRUNCATE: it deletes the table's data
+
+
  
 
  
