@@ -6,9 +6,9 @@ This repository demonstrates my understanding of SQL through hands-on practice w
 
 ## Overview
 
-The repository is organized into SQL files containing practical examples of SQL concepts, ranging from database fundamentals and table creation to data retrieval, constraints, and advanced querying techniques.
+The repository is organized into SQL files containing practical examples of SQL concepts, ranging from database fundamentals and table creation to data retrieval, constraints, and data manipulation.
 
-It also includes three practice sets to strengthen SQL problem-solving skills through hands-on exercises.
+It also includes three practice sets covering database creation, employee data management, data aggregation, grouping, sorting, and payment method analysis.
 
 It serves as a reference for the concepts I have learned and a demonstration of my database management and data analysis skills.
 
@@ -16,7 +16,7 @@ It serves as a reference for the concepts I have learned and a demonstration of 
 
 - **SQL Fundamentals:** Creating, selecting, and dropping databases; creating tables and inserting records.
 - **Database Exploration:** Displaying databases, listing tables, and inspecting table structures using `DESCRIBE`.
-- **SQL Constraints:** Understanding `PRIMARY KEY`, `NOT NULL`, `DEFAULT`, and `CHECK` constraints.
+- **SQL Constraints:** Understanding `PRIMARY KEY`, `NOT NULL`, `DEFAULT`, `CHECK`, and `UNSIGNED` constraints.
 - **Foreign Key Relationships:** Implementing foreign keys with `ON DELETE CASCADE` and `ON UPDATE CASCADE`.
 - **Data Retrieval:** Using `SELECT` statements to retrieve all or specific columns from tables.
 - **Distinct Values:** Eliminating duplicate records using the `DISTINCT` keyword.
@@ -27,7 +27,15 @@ It serves as a reference for the concepts I have learned and a demonstration of 
 - **Data Grouping:** Grouping records using `GROUP BY` and filtering grouped results using `HAVING`.
 - **Data Manipulation:** Updating existing records using `UPDATE` and removing records using `DELETE`.
 - **Conditional Expressions:** Applying `CASE` expressions for conditional data updates.
-- **SQL Practice Sets:** Solving practical exercises to reinforce concepts and improve query-writing skills.
+- **Practical SQL Exercises:** Creating employee databases, calculating average marks by city, grouping customer records by payment method, and performing data analysis queries.
+
+## Practice Sets
+
+| **Practice Set** | **Description** |
+| ---------------- | -------------------------------- |
+| Practice Set 1 | Creating a company database, designing an employee table, defining constraints, inserting employee records, and retrieving data. |
+| Practice Set 2 | Calculating average student marks by city, grouping records, and sorting query results. |
+| Practice Set 3 | Analyzing customer records by payment method using `GROUP BY` and `COUNT()`. |
 
 ## Technologies Used
 
@@ -46,6 +54,7 @@ SQL-Learning-Data-Analytics/
 │
 ├── sql_basics.sql
 ├── classroom.sql
+│
 ├── practice_set_1.sql
 ├── practice_set_2.sql
 ├── practice_set_3.sql
@@ -82,9 +91,9 @@ Through this project, I have developed practical experience in:
 - Retrieving and filtering data using SQL queries.
 - Applying logical and comparison operators.
 - Performing calculations using aggregate functions.
-- Grouping and summarizing records.
+- Grouping and sorting records for analysis.
 - Updating and deleting database records.
-- Writing SQL queries to solve practical problems.
+- Analyzing structured data using practical SQL queries.
 
 ## Acknowledgment
 
